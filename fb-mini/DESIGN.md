@@ -1,7 +1,7 @@
 # tables
 
 ## users
-- id (int)
+- id (uuid)
 - name:
   - first name (string)
   - last name (string)
@@ -10,24 +10,24 @@
 - bio (string)
 
 ## posts
-- user id (int)
-- id (int)
+- user id (uuid)
+- id (uuid)
 - text (string)
 - date posted (date)
 - time posted (time)
 - number of likes (int)
 
 ## comments
-- post id (int)
-- user id (int)
+- post id (uuid)
+- user id (uuid)
 - date posted (date)
 - time posted (time)
 
 ## friends
-- user 1 id (int)
-- user 2 id (int)
+- user 1 id (uuid)
+- user 2 id (uuid)
 - date requested (date)
-- status (string?)
+- status (string? enum?)
 
 # relationships
 

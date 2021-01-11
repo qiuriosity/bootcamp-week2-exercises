@@ -1,6 +1,6 @@
 const casual = require('casual')
 
-casual.define('user', () => ({
+casual.define('users', () => ({
   id: casual.uuid,
   email: casual.email,
   created_at: casual.moment,
@@ -11,7 +11,7 @@ casual.define('user', () => ({
 const userData = []
 
 for (let i = 0; i < 20; ++i) {
-  userData.push(casual.user)
+  userData.push(casual.users)
 }
 
 module.exports = userData
